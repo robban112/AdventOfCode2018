@@ -49,16 +49,4 @@ def main2():
         if len(minReacted) > len(reacted):
             minReacted = reacted
     print(len(minReacted))
-
-def test():
-    polymer = 'AAaaBbCcDDEEeFf'
-    reacted = polymer
-    for char in ['a']:
-        last = ""
-        while True:
-            reacted = reactWithUnit(char, reacted)
-            if len(reacted) == len(last):
-                break
-            last = reacted
-        print(reacted)
 main2()
